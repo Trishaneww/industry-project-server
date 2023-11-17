@@ -1,0 +1,41 @@
+@use '../../styles/mixins.scss' as *;
+@use '../../styles/typography' as *;
+@use '../../styles/variables.scss' as *;
+
+.search-map{
+    margin: 2rem 8rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+    &__input{
+        @include search-bar;
+        background-image: url('../../assets/icons/location-icon.png');
+        background-position: left;
+        background-position-x: 3px;
+        background-repeat: no-repeat;
+        padding-left: 2rem;
+    }
+    
+    &__button{
+        @include button-blue;
+    }
+}
+
+.address-list {
+    text-align: center;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(209, 209, 209);
+    width: 500px;
+
+    h1 {
+        font-size: 20px;
+    }
+
+    h2 {
+        font-size: 15px;
+    }
+}
